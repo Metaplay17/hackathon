@@ -1,16 +1,14 @@
-﻿using api.DataStructures;
-
-namespace api.models
+﻿namespace api.models
 {
     public class ApplicantsBase
     {
-        private SortedSet<Applicant> applicantsSet;
         private Database database;
+        private Dictionary<string, Direction> directions;
 
         public ApplicantsBase()
         {
-            applicantsSet = new SortedSet<Applicant>();
             database = new Database();
+            directions = new Dictionary<string, Direction>();
         }
 
         public void LoadApplicants()
@@ -18,13 +16,31 @@ namespace api.models
             Applicant[] applicants = database.LoadApplicants();
             foreach (Applicant applicant in applicants)
             {
-                applicantsSet.Add(applicant);
+                foreach(string priority in applicant.Priorities)
+                {
+                    directions[priority].AddApplicant(applicant);
+                }
             }
         }
 
-      
+        public void AddDirection(Direction direction)
+        {
+            directions.Add(direction.Name, direction);
+        }
 
-        
+        public Applicant[] GetDirectionResult(string directionName)
+        {
+            return directions[directionName].GetResultList();
+        }
 
+        public Direction[] DirectionsArray
+        {
+            get { return directions.Values.ToArray(); }
+        }
+
+        public Dictionary<string, Direction> DirectionsDictionary
+        {
+            get { return directions; }
+        }
     }
 }

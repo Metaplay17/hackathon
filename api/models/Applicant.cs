@@ -7,12 +7,14 @@
         private int ballAmount;
         private bool isSubmitOriginalDocs;
         private string snils;
+        private string[] priorities;
 
         public Applicant(int id, string snils)
         {
             this.id = id;
             results = new Dictionary<Subject, int>();
             this.snils = snils;
+            priorities = new string[5];
         }
 
         public void AddResult(Subject subject, int ball)
@@ -30,6 +32,11 @@
             }
         }
 
+        public void SetPrioroties(string[] newPrioroties)
+        {
+            priorities = newPrioroties;
+        }
+
         public void ConfirmOrginalDocs()
         {
             isSubmitOriginalDocs = true;
@@ -43,6 +50,11 @@
         public int Id
         {
             get { return id; }
+        }
+
+        public string Snils
+        {
+            get { return snils; }
         }
 
         public int BallAmount
@@ -60,6 +72,9 @@
             return ballAmount - other.ballAmount;
         }
 
-
+        public string[] Priorities
+        {
+            get { return Priorities; }
+        }
     }
 }

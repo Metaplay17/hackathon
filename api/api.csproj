@@ -7,12 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Npgsql" Version="9.0.3" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <Compile Remove="DataStructures\**" />
+    <Content Remove="DataStructures\**" />
+    <EmbeddedResource Remove="DataStructures\**" />
+    <None Remove="DataStructures\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DataStructures\" />
+    <PackageReference Include="Npgsql" Version="9.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
 </Project>

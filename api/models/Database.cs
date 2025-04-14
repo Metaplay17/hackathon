@@ -15,5 +15,10 @@
         {
 
         }
+
+        public Dictionary<string, Direction> GetAllDirectionsList()
+        {
+
+        }
     }
 }
