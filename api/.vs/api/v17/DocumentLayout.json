@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Codes\\hackathon\\api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|d:\\codes\\hackathon\\api\\models\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|solutionrelative:models\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|d:\\codes\\hackathon\\api\\controllers\\applicantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|solutionrelative:controllers\\applicantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|d:\\codes\\hackathon\\api\\controllers\\listscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|solutionrelative:controllers\\listscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|d:\\codes\\hackathon\\api\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|solutionrelative:logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|d:\\codes\\hackathon\\api\\models\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|solutionrelative:models\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|d:\\codes\\hackathon\\api\\models\\applicantsbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|solutionrelative:models\\applicantsbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|d:\\codes\\hackathon\\api\\models\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|solutionrelative:models\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|d:\\codes\\hackathon\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|d:\\codes\\hackathon\\api\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|solutionrelative:models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicantController.cs",
+              "DocumentMoniker": "D:\\Codes\\hackathon\\api\\Controllers\\ApplicantController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApplicantController.cs",
+              "ToolTip": "D:\\Codes\\hackathon\\api\\Controllers\\ApplicantController.cs",
+              "RelativeToolTip": "Controllers\\ApplicantController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:52:46.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListsController.cs",
+              "DocumentMoniker": "D:\\Codes\\hackathon\\api\\Controllers\\ListsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ListsController.cs",
+              "ToolTip": "D:\\Codes\\hackathon\\api\\Controllers\\ListsController.cs",
+              "RelativeToolTip": "Controllers\\ListsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:27:46.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Direction.cs",
+              "DocumentMoniker": "D:\\Codes\\hackathon\\api\\models\\Direction.cs",
+              "RelativeDocumentMoniker": "models\\Direction.cs",
+              "ToolTip": "D:\\Codes\\hackathon\\api\\models\\Direction.cs",
+              "RelativeToolTip": "models\\Direction.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAmwBAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:47:16.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Codes\\hackathon\\api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Codes\\hackathon\\api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:33:22.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Logic.cs",
+              "DocumentMoniker": "D:\\Codes\\hackathon\\api\\Logic.cs",
+              "RelativeDocumentMoniker": "Logic.cs",
+              "ToolTip": "D:\\Codes\\hackathon\\api\\Logic.cs",
+              "RelativeToolTip": "Logic.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwFAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:18:10.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicantsBase.cs",
+              "DocumentMoniker": "D:\\Codes\\hackathon\\api\\models\\ApplicantsBase.cs",
+              "RelativeDocumentMoniker": "models\\ApplicantsBase.cs",
+              "ToolTip": "D:\\Codes\\hackathon\\api\\models\\ApplicantsBase.cs",
+              "RelativeToolTip": "models\\ApplicantsBase.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowCoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T10:45:00.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Database.cs",
+              "DocumentMoniker": "D:\\Codes\\hackathon\\api\\models\\Database.cs",
+              "RelativeDocumentMoniker": "models\\Database.cs",
+              "ToolTip": "D:\\Codes\\hackathon\\api\\models\\Database.cs",
+              "RelativeToolTip": "models\\Database.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T10:39:56.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Subject.cs",
+              "DocumentMoniker": "D:\\Codes\\hackathon\\api\\models\\Subject.cs",
+              "RelativeDocumentMoniker": "models\\Subject.cs",
+              "ToolTip": "D:\\Codes\\hackathon\\api\\models\\Subject.cs",
+              "RelativeToolTip": "models\\Subject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T10:32:18.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Applicant.cs",
+              "DocumentMoniker": "D:\\Codes\\hackathon\\api\\models\\Applicant.cs",
+              "RelativeDocumentMoniker": "models\\Applicant.cs",
+              "ToolTip": "D:\\Codes\\hackathon\\api\\models\\Applicant.cs",
+              "RelativeToolTip": "models\\Applicant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T10:30:21.152Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
