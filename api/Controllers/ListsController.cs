@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace api.Controllers
 {
@@ -12,10 +13,11 @@ namespace api.Controllers
             this.logic = logic;
         }
 
-        [HttpGet("[direction]/result")]
-        public void GetDirectionResult(string direction)
+        [HttpGet("{direction}/result")]
+        public IActionResult GetDirectionResult(string direction)
         {
             string[] JsonApplicants = logic.GetDirectionResult(direction);
+            return Ok(JsonSerializer.Serialize(JsonApplicants));
         }
 
     }

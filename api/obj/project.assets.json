@@ -602,8 +602,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kirol\\.nuget\\packages\\": {},
-    "D:\\Programs\\VS 2022 SDK\\NuGetPackages": {}
+    "C:\\Users\\Furina\\.nuget\\packages\\": {},
+    "D:\\Programs\\Visual Studio 2022 Instruments\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -611,14 +611,14 @@
       "projectUniqueName": "D:\\Codes\\hackathon\\api\\api.csproj",
       "projectName": "api",
       "projectPath": "D:\\Codes\\hackathon\\api\\api.csproj",
-      "packagesPath": "C:\\Users\\Kirol\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Furina\\.nuget\\packages\\",
       "outputPath": "D:\\Codes\\hackathon\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Programs\\VS 2022 SDK\\NuGetPackages"
+        "D:\\Programs\\Visual Studio 2022 Instruments\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kirol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Furina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -644,8 +644,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -679,7 +678,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
