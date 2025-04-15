@@ -1,4 +1,5 @@
 ﻿using api.models;
+using api.Structures;
 using System.Text.Json;
 
 namespace api
@@ -7,15 +8,12 @@ namespace api
     {
         ApplicantsBase appBase;
         Database db;
-        Dictionary<string, List<Applicant>> finalList;
 
         public Logic()
         {
             appBase = new ApplicantsBase();
             db = new Database();
-            Dictionary<string, Direction> directions = db.GetAllDirectionsList();
             appBase.LoadApplicants();
-            finalList = new Dictionary<string, List<Applicant>>();
         }
 
         public string[] GetDirectionResult(string direction)
@@ -79,5 +77,10 @@ namespace api
         {
             return appBase.DirectionsDictionary[direction].FinalList.ToArray();
         }
+
+        public void AddApplicant(ApplicantStruct applicant)
+        {
+            db.AddApplicant(applicant);
+        } 
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using api.Structures;
+using Microsoft.AspNetCore.Mvc;
 
 namespace api.Controllers
 {
@@ -13,9 +14,10 @@ namespace api.Controllers
         }
 
         [HttpPost("/Add")]
-        public void GetDirectionResult(string direction)
+        public IActionResult AddApplicant([FromBody] ApplicantStruct applicant)
         {
-            string[] JsonApplicants = logic.GetDirectionResult(direction);
+            logic.AddApplicant(applicant);
+            return Ok();
         }
     }
 }
