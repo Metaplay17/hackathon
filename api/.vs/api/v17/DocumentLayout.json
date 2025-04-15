@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\Codes\\hackathon\\api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|D:\\Codes\\hackathon\\api\\models\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|d:\\codes\\hackathon\\api\\models\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|solutionrelative:models\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|solutionrelative:models\\applicantsbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|d:\\codes\\hackathon\\api\\structures\\applicantstruct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|D:\\Codes\\hackathon\\api\\structures\\applicantstruct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8329393A-4F30-45F5-96CD-2B5F544FD1F8}|api.csproj|solutionrelative:structures\\applicantstruct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -50,8 +50,7 @@
               "RelativeToolTip": "Structures\\ApplicantStruct.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T06:31:31.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T06:31:31.118Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "Logic.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAAuwFIAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T13:18:10.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T13:18:10.814Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "Controllers\\ApplicantController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T14:52:46.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T14:52:46.461Z"
             },
             {
               "$type": "Document",
@@ -89,8 +86,7 @@
               "RelativeToolTip": "Controllers\\ListsController.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T13:27:46.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T13:27:46.015Z"
             },
             {
               "$type": "Document",
@@ -100,7 +96,7 @@
               "RelativeDocumentMoniker": "models\\ApplicantsBase.cs",
               "ToolTip": "D:\\Codes\\hackathon\\api\\models\\ApplicantsBase.cs",
               "RelativeToolTip": "models\\ApplicantsBase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAmAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAkwAkAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:45:00.828Z",
               "EditorCaption": ""
@@ -113,7 +109,7 @@
               "RelativeDocumentMoniker": "models\\Database.cs",
               "ToolTip": "D:\\Codes\\hackathon\\api\\models\\Database.cs",
               "RelativeToolTip": "models\\Database.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAANAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAgwCQAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T10:39:56.237Z",
               "EditorCaption": ""
