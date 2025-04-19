@@ -1,5 +1,7 @@
 ﻿using api.models;
 using api.Structures;
+using Microsoft.AspNetCore.Mvc;
+using System.Data;
 using System.Text.Json;
 
 namespace api
@@ -13,27 +15,63 @@ namespace api
         {
             appBase = new ApplicantsBase();
             db = new Database();
-            appBase.LoadApplicants();
+            appBase.Init();
+            CalcFinalList();
         }
 
-        public string[] GetDirectionResult(string direction)
+        public IActionResult GetDirectionList(string direction)
         {
-            Applicant[] applicants = appBase.GetDirectionResult(direction);
-            List<string> applicantsJson = new List<string>();
+            Applicant[] applicants = appBase.GetDirectionList(direction);
+            var result = new List<object>();
 
-            foreach(Applicant applicant in applicants)
+            foreach (Applicant applicant in applicants)
             {
                 string[] priorities = applicant.Priorities;
-                var app = new
+                result.Add(new
                 {
                     Snils = applicant.Snils,
                     BallAmount = applicant.BallAmount,
-                    Priority = Array.IndexOf(applicant.Priorities, direction) + 1
-                };
-                applicantsJson.Add(JsonSerializer.Serialize(app));
+                    Priority = Array.IndexOf(priorities, direction) + 1
+                });
             }
-            applicantsJson.Reverse();
-            return applicantsJson.ToArray();
+
+            result.Reverse();
+
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+            };
+
+            return new JsonResult(result, options);
+        }
+
+        public IActionResult GetDirectionOriginals(string direction)
+        {
+            Applicant[] applicants = appBase.GetDirectionOriginals(direction);
+            var result = new List<object>();
+
+            foreach (Applicant applicant in applicants)
+            {
+                string[] priorities = applicant.Priorities;
+                result.Add(new
+                {
+                    Snils = applicant.Snils,
+                    BallAmount = applicant.BallAmount,
+                    Priority = Array.IndexOf(priorities, direction) + 1
+                });
+            }
+
+            result.Reverse();
+
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            };
+
+            return new JsonResult(result, options);
         }
 
         public void CalcFinalList()
@@ -42,16 +80,19 @@ namespace api
             Dictionary<string, Direction> directions = appBase.DirectionsDictionary;
             foreach (Direction d in appBase.DirectionsArray)
             {
-                foreach(Applicant app in d.Applicants)
+                foreach (Applicant app in d.Applicants)
                 {
-                    allApplicants.Add(app);
+                    if (app.IsSubmitOriginalDocs)
+                    {
+                        allApplicants.Add(app);
+                    }
                 }
             }
 
-            foreach(Applicant app in allApplicants)
+            foreach (Applicant app in allApplicants)
             {
                 bool used = false;
-                foreach(string priority in app.Priorities)
+                foreach (string priority in app.Priorities)
                 {
                     if (directions[priority].FinalList.Count() < directions[priority].FreePlaces)
                     {
@@ -73,14 +114,32 @@ namespace api
             }
         }
 
-        public Applicant[] GetDirectionFinalList(string direction)
-        {
-            return appBase.DirectionsDictionary[direction].FinalList.ToArray();
-        }
+        public IActionResult GetDirectionFinalList(string direction)
+        { 
 
-        public void AddApplicant(ApplicantStruct applicant)
-        {
-            db.AddApplicant(applicant);
-        } 
+            var applicants = appBase.DirectionsDictionary[direction].FinalList;
+            var result = new List<object>();
+
+            foreach (var applicant in applicants)
+            {
+                result.Add(new
+                {
+                    Snils = applicant.Snils,
+                    BallAmount = applicant.BallAmount,
+                    Priority = Array.IndexOf(applicant.Priorities, direction) + 1
+                });
+            }
+
+            result.Reverse();
+
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+                PropertyNamingPolicy = null // Сохраняем оригинальные имена свойств
+            };
+
+            return new JsonResult(result, options);
+        }
     }
 }

@@ -2,28 +2,26 @@
 {
     public class Applicant : IComparable<Applicant>
     {
-        private int id;
-        private Dictionary<Subject, int> results;
+        private Dictionary<string, int> results;
         private int ballAmount;
         private bool isSubmitOriginalDocs;
         private string snils;
         private string[] priorities;
 
-        public Applicant(int id, string snils)
+        public Applicant(string snils)
         {
-            this.id = id;
-            results = new Dictionary<Subject, int>();
+            results = new Dictionary<string, int>();
             this.snils = snils;
             priorities = new string[5];
         }
 
-        public void AddResult(Subject subject, int ball)
+        public void AddResult(string subject, int ball)
         {
             results.Add(subject, ball);
             ballAmount += ball;
         }
 
-        public void RemoveResult(Subject subject) 
+        public void RemoveResult(string subject) 
         { 
             if (results.ContainsKey(subject))
             {
@@ -45,11 +43,6 @@
         public void RemoveConfirmationOriginalDocs()
         {
             isSubmitOriginalDocs = false;
-        }
-
-        public int Id
-        {
-            get { return id; }
         }
 
         public string Snils
@@ -74,7 +67,7 @@
 
         public string[] Priorities
         {
-            get { return Priorities; }
+            get { return priorities; }
         }
     }
 }

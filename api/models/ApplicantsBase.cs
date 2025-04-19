@@ -11,7 +11,7 @@
             directions = new Dictionary<string, Direction>();
         }
 
-        public void LoadApplicants()
+        private void LoadApplicants()
         {
             Applicant[] applicants = database.LoadApplicants();
             foreach (Applicant applicant in applicants)
@@ -23,14 +23,31 @@
             }
         }
 
-        public void AddDirection(Direction direction)
+        private void LoadDirections()
+        {
+            directions = database.LoadDirections();
+            
+        }
+
+        public void Init()
+        {
+            LoadDirections();
+            LoadApplicants();
+        }
+
+        private void AddDirection(Direction direction)
         {
             directions.Add(direction.Name, direction);
         }
 
-        public Applicant[] GetDirectionResult(string directionName)
+        public Applicant[] GetDirectionList(string directionName)
         {
-            return directions[directionName].GetResultList();
+            return directions[directionName].GetList();
+        }
+
+        public Applicant[] GetDirectionOriginals(string directionName)
+        {
+            return directions[directionName].GetOriginalsList();
         }
 
         public Direction[] DirectionsArray

@@ -16,7 +16,7 @@ namespace api.Controllers
         [HttpPost("/Add")]
         public IActionResult AddApplicant([FromBody] ApplicantStruct applicant)
         {
-            logic.AddApplicant(applicant);
+            //logic.AddApplicant(applicant);
             return Ok();
         }
     }

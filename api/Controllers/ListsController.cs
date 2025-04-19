@@ -13,11 +13,22 @@ namespace api.Controllers
             this.logic = logic;
         }
 
+        [HttpGet("{direction}/list")]
+        public IActionResult GetDirectionList(string direction)
+        {
+            return logic.GetDirectionList(direction);
+        }
+
+        [HttpGet("{direction}/originals")]
+        public IActionResult GetDirectionOriginals(string direction)
+        {
+            return logic.GetDirectionOriginals(direction);
+        }
+
         [HttpGet("{direction}/result")]
         public IActionResult GetDirectionResult(string direction)
         {
-            string[] JsonApplicants = logic.GetDirectionResult(direction);
-            return Ok(JsonSerializer.Serialize(JsonApplicants));
+            return logic.GetDirectionFinalList(direction);
         }
 
     }

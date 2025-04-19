@@ -17,8 +17,8 @@
   },
   {
     "ContainingType": "api.Controllers.ListsController",
-    "Method": "GetDirectionResult",
-    "RelativePath": "Lists/{direction}/result",
+    "Method": "GetDirectionList",
+    "RelativePath": "Lists/{direction}/list",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -32,23 +32,35 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "api.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "api.Controllers.ListsController",
+    "Method": "GetDirectionOriginals",
+    "RelativePath": "Lists/{direction}/originals",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[api.WeatherForecast, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "direction",
+        "Type": "System.String",
+        "IsRequired": true
       }
-    ]
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api.Controllers.ListsController",
+    "Method": "GetDirectionResult",
+    "RelativePath": "Lists/{direction}/result",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "direction",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

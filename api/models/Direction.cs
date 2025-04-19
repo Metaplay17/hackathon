@@ -44,12 +44,12 @@
             get { return feePlaces; }
         }
 
-        public List<Applicant> FinalList
+        public Applicant[] GetList()
         {
-            get { return finalList; }
+            return applicants.ToArray();
         }
 
-        public Applicant[] GetResultList()
+        public Applicant[] GetOriginalsList()
         {
             List<Applicant> result = new List<Applicant>();
             foreach (Applicant applicant in applicants)
@@ -61,6 +61,11 @@
             }
             result.Reverse();
             return result.ToArray();
+        }
+
+        public List<Applicant> FinalList
+        {
+            get { return finalList; }
         }
     }
 }
