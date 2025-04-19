@@ -40,7 +40,8 @@ namespace api
             var options = new JsonSerializerOptions
             {
                 WriteIndented = true,
-                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             };
 
             return new JsonResult(result, options);
@@ -136,7 +137,7 @@ namespace api
             {
                 WriteIndented = true,
                 Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
-                PropertyNamingPolicy = null // Сохраняем оригинальные имена свойств
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             };
 
             return new JsonResult(result, options);
