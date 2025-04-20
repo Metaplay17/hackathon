@@ -31,5 +31,11 @@ namespace api.Controllers
             return logic.GetDirectionFinalList(direction);
         }
 
+        [HttpGet("directions")]
+        public IActionResult GetAllDirections()
+        {
+            return logic.GetAllDirections();
+        }
+
     }
 }

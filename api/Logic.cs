@@ -17,8 +17,35 @@ namespace api
             db = new Database();
             appBase.Init();
             CalcFinalList();
+            //db.GenerateAndInsertApplicants(1);
         }
+        public IActionResult GetAllDirections()
+        {
+            Dictionary<string, string> names = db.GetDirectionsFullNames();
+            Dictionary<string, string[]> subjects = db.GetDirectionsSubjects();
+            var result = new List<object>();
 
+            foreach (var name in names.Keys)
+            {
+                result.Add(new
+                {
+                    Name = name,
+                    Value = names[name],
+                    prOne = subjects[name][0],
+                    prTwo = subjects[name][1],
+                    prThree = subjects[name][2]
+                });
+            }
+
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            };
+
+            return new JsonResult(result, options);
+        }
         public IActionResult GetDirectionList(string direction)
         {
             Applicant[] applicants = appBase.GetDirectionList(direction);
